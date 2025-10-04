@@ -1,3 +1,4 @@
+# pip install vosk
 import soundfile as sf
 from vosk import Model, KaldiRecognizer
 
