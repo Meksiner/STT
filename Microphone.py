@@ -1,3 +1,4 @@
+# pip install vosk
 import argparse
 import queue
 import sys
