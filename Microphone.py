@@ -53,7 +53,7 @@ try:
         args.samplerate = int(device_info["default_samplerate"])
 
     if args.model is None:
-        model = Model("C:/Users/Koraku/STT/models/vosk-model-small-ru-0.22")
+        model = Model("/STT/models/vosk-model-small-ru-0.22")
     else:
         model = Model(args.model)
 
