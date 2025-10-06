@@ -1,0 +1,2 @@
+1) install_dependencies
+2) start_app
