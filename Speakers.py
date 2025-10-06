@@ -4,7 +4,7 @@ from vosk import Model, KaldiRecognizer
 import json
 
 # Загружаем модель
-model = Model(r"C:/Users/Koraku/STT/models/vosk-model-small-ru-0.22")
+model = Model(r"models/vosk-model-small-ru-0.22")
 
 # Читаем WAV/OGG
 data, samplerate = sf.read("e.wav", dtype="int16")
