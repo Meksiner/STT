@@ -8,7 +8,7 @@ app = Flask(__name__)
 q = queue.Queue()
 
 # Подгружаем модель
-MODEL_PATH = r"C:/Users/Koraku/STT/models/vosk-model-small-ru-0.22"
+MODEL_PATH = r"/STT/models/vosk-model-small-ru-0.22"
 model = Model(MODEL_PATH)
 
 stop_mic = False   # <-- флаг для остановки микрофона
