@@ -1,7 +1,7 @@
 from vosk import Model
 import os
 
-model_path = r"C:/Users/Koraku/STT/models/vosk-model-small-ru-0.22"
+model_path = r"STT/models/vosk-model-small-ru-0.22"
 
 print("Проверяю папку:", model_path)
 print("Содержимое:", os.listdir(model_path))
