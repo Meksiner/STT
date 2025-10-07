@@ -52,7 +52,7 @@ def mic_worker(samplerate, device, callback):
             print("⚠", status)
         q.put(bytes(indata))
 
-    with sd.RawInputStream(samplerate=samplerate, blocksize=8000,
+    with sd.RawInputStream(samplerate=samplerate, blocksize=16000,
                            device=device, dtype="int16", channels=1,
                            callback=sd_callback):
         while not stop_mic:
