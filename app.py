@@ -19,8 +19,8 @@ def transcribe_file(filepath):
     rec = KaldiRecognizer(model, samplerate)
     result = []
 
-    for chunk in range(0, len(data), 4000):
-        if rec.AcceptWaveform(data[chunk:chunk+4000].tobytes()):
+    for chunk in range(0, len(data), 16000):
+        if rec.AcceptWaveform(data[chunk:chunk+16000].tobytes()):
             res = json.loads(rec.Result())
             if res.get("text"):
                 result.append(res["text"])
