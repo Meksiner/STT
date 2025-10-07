@@ -19,8 +19,8 @@ rec = KaldiRecognizer(model, samplerate)
 results = []
 
 # Обрабатываем чанками по 0.5 сек
-for i in range(0, len(data), 8000):
-    chunk = data[i:i+8000]
+for i in range(0, len(data), 16000):
+    chunk = data[i:i+16000]
     if rec.AcceptWaveform(chunk.tobytes()):
         res = json.loads(rec.Result())
         results.append(res.get("text", ""))
