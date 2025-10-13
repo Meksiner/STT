@@ -1,0 +1,4 @@
+1) install_dependencies
+2) download models for punctuation - https://disk.yandex.ru/d/No3N5fbB3SCkxQ
+3) take RUPunct models to STT/models 
+4) start_app

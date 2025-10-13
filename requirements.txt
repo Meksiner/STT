@@ -1,0 +1,6 @@
+flask
+vosk
+soundfile
+sounddevice
+torch
+transformers
